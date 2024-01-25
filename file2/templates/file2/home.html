@@ -1,0 +1,20 @@
+{% extends "file2/base.html "%}
+{% load static %}
+{% block title  %}HOME{% endblock title  %}
+{% block content %}
+
+{% if age >= 16 %}
+    <h1> HOME, {{ page }}</h>
+        <P>
+            messi has a new post
+            ronaldo has a new post
+        </p>
+{% else %}
+    <h1>HOME, {{ page2 }}</h>
+        <P>
+            Anthony has a new post
+        </p>
+
+{% endif %}
+
+{% endblock content %}
